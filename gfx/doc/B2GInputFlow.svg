@@ -1,57 +1,4 @@
-<?xml version="1.0"?>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="800">
- <title>Touch input event flow on B2G</title>
- <g id="arrows"></g>
- <style type="text/css"><![CDATA[
-    text {
-        fill: black;
-        text-anchor: middle;
-        white-space: pre-line;
-        font-size: 14px;
-    }
-    rect {
-        fill: none;
-    }
-    line {
-        stroke: black;
-    }
-    .parentinput rect {
-        stroke: black;
-    }
-    text.parentinput {
-        fill: black;
-        text-anchor: start;
-    }
-    .parentmain rect {
-        stroke: orange;
-    }
-    text.parentmain {
-        fill: orange;
-        text-anchor: start;
-    }
-    .parentcompositor rect {
-        stroke: green;
-    }
-    text.parentcompositor {
-        fill: green;
-        text-anchor: start;
-    }
-    .childmain rect {
-        stroke: red;
-    }
-    text.childmain {
-        fill: red;
-        text-anchor: start;
-    }
-    .bothmain rect {
-        stroke: blue;
-    }
-    text.bothmain {
-        fill: blue;
-        text-anchor: start;
-    }
- ]]></style>
- <script type="text/javascript"><![CDATA[
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="800" version="1.1"><title>Touch input event flow on B2G</title><style type="text/css">text{fill:#000;text-anchor:middle;white-space:pre-line;font-size:14px}rect{fill:none}.parentinput rect,line{stroke:#000}text.parentinput,text.parentmain{fill:#000;text-anchor:start}text.parentmain{fill:orange}.parentmain rect{stroke:orange}.parentcompositor rect{stroke:green}text.parentcompositor{fill:green;text-anchor:start}.childmain rect{stroke:red}text.bothmain,text.childmain{text-anchor:start}text.childmain{fill:red}.bothmain rect{stroke:#00f}text.bothmain{fill:#00f}</style><script type="text/javascript"><![CDATA[
     var svg = "http://www.w3.org/2000/svg";
     var maxY = 0;
 
@@ -345,5 +292,4 @@
     document.documentElement.appendChild(makeLegend("Main process compositor thread", "parentcompositor"));
     document.documentElement.appendChild(makeLegend("Child process main thread", "childmain"));
     document.documentElement.appendChild(makeLegend("Undetermined process main thread", "bothmain"));
- ]]></script>
-</svg>
+ ]]></script></svg>
